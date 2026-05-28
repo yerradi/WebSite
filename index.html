@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<!-- Default lang attribute. The i18n engine overrides it (and dir) at runtime
+     based on stored preference or browser language. -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.title">Youssef Erradi | Systems That Bring You Clients. Automatically.</title>
+  <meta name="description" data-i18n-attr="content:meta.description"
+    content="I build complete business systems — high-converting websites, lead automation, and custom dashboards — that generate revenue and streamline operations for growing companies.">
+
+  <!-- Localised alternates for SEO -->
+  <link rel="alternate" hreflang="en" href="./?lang=en">
+  <link rel="alternate" hreflang="fr" href="./?lang=fr">
+  <link rel="alternate" hreflang="ar" href="./?lang=ar">
+  <link rel="alternate" hreflang="x-default" href="./">
+
+  <!-- Performance: DNS prefetch & preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+  <!-- Fonts: Inter (Latin) + Space Grotesk (display) + JetBrains Mono (code)
+       + Cairo / Tajawal (premium Arabic) — all loaded once, applied per lang via CSS. -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Preload critical CSS -->
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="apple-touch-icon" href="img/favicon.svg">
+
+  <!-- Theme color for mobile browsers -->
+  <meta name="theme-color" content="#09090b">
+  <meta name="color-scheme" content="dark">
+
+  <!-- i18n engine: loaded early so text swaps in before paint where possible. -->
+  <script src="js/i18n.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Ambient background -->
+  <div class="bg-ambient">
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+    <div class="ambient-orb ambient-orb-3"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-mark">
+          <svg class="logo-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" data-i18n-attr="aria-label:a11y.ye_logo" aria-label="YE Logo">
+            <path d="M28 36L68 100" stroke="white" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M108 36L68 100" stroke="white" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M68 100V164" stroke="white" stroke-width="18" stroke-linecap="round"/>
+            <path d="M128 36V164" stroke="white" stroke-width="18" stroke-linecap="round"/>
+            <path d="M128 36H180" stroke="white" stroke-width="18" stroke-linecap="round"/>
+            <path d="M128 100H172" stroke="white" stroke-width="18" stroke-linecap="round"/>
+            <path d="M128 164H180" stroke="white" stroke-width="18" stroke-linecap="round"/>
+            <path d="M78 100H118" stroke="#818cf8" stroke-width="14" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-text-group">
+          <span class="logo-text" data-i18n="logo.name">Youssef Erradi Labs</span>
+          <span class="logo-sub" data-i18n="logo.sub">Systems &bull; Automation &bull; Growth</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#services" class="nav-link" data-i18n="nav.services">Services</a>
+        <a href="#pricing" class="nav-link" data-i18n="nav.pricing">Pricing</a>
+        <a href="#work" class="nav-link" data-i18n="nav.work">Work</a>
+        <a href="#process" class="nav-link" data-i18n="nav.process">Process</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language switcher — populated by js/i18n.js -->
+        <div class="lang-switcher" data-lang-switcher></div>
+
+        <a href="#contact" class="btn btn-primary btn-nav">
+          <span data-i18n="nav.cta">Start Your Project</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" class="icon-arrow-diag">
+            <path d="M7 17L17 7"></path>
+            <path d="M7 7h10v10"></path>
+          </svg>
+        </a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" data-i18n-attr="aria-label:a11y.toggle_menu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-nav">
+        <a href="#services" class="mobile-nav-link" data-i18n="nav.services">Services</a>
+        <a href="#pricing" class="mobile-nav-link" data-i18n="nav.pricing">Pricing</a>
+        <a href="#work" class="mobile-nav-link" data-i18n="nav.work">Work</a>
+        <a href="#process" class="mobile-nav-link" data-i18n="nav.process">Process</a>
+        <a href="#about" class="mobile-nav-link" data-i18n="nav.about">About</a>
+
+        <!-- Mobile language switcher -->
+        <div class="lang-switcher lang-switcher-mobile" data-lang-switcher></div>
+
+        <a href="#contact" class="btn btn-primary btn-mobile-cta" data-i18n="nav.cta">Start Your Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="container hero-container">
+        <!-- Left Content -->
+        <div class="hero-content">
+          <div class="hero-badge reveal-fade-up">
+            <span class="badge-dot"></span>
+            <span data-i18n="hero.badge">Limited Availability — 2 Spots Left This Month</span>
+          </div>
+
+          <h1 class="hero-title reveal-text">
+            <span data-i18n="hero.title_line1">Systems That Bring</span>
+            <span data-i18n="hero.title_line2">You Clients.</span>
+            <span><em class="text-accent" data-i18n="hero.title_em">Automatically.</em></span>
+          </h1>
+
+          <p class="hero-desc reveal-fade" data-i18n-html="hero.desc_html">
+            Not just websites — <strong>complete business systems</strong> that attract clients, capture leads on autopilot, and give you real-time visibility into your operations through custom dashboards and tools.
+          </p>
+          <p class="hero-supporting reveal-fade" data-i18n="hero.supporting">Built for businesses that want predictable growth and automated operations.</p>
+
+          <div class="hero-cta reveal-fade-up">
+            <a href="#contact" class="btn btn-primary btn-lg btn-glow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span data-i18n="hero.cta_primary">Book a Free Strategy Call</span>
+            </a>
+            <a href="#services" class="btn btn-ghost btn-lg">
+              <span data-i18n="hero.cta_secondary">View My Work</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-arrow-diag">
+                <path d="M7 17L17 7"></path>
+                <path d="M7 7h10v10"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Trust line + mini stats -->
+          <div class="hero-trust reveal-fade-up">
+            <div class="hero-trust-line">
+              <span class="trust-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </span>
+              <span data-i18n="hero.trust">Built real-world systems used by businesses to manage operations and workflows</span>
+            </div>
+            <div class="hero-mini-stats">
+              <div class="mini-stat">
+                <span class="mini-stat-value" data-count="50">50+</span>
+                <span class="mini-stat-label" data-i18n="hero.stat_projects_label">Projects</span>
+              </div>
+              <div class="mini-stat-divider"></div>
+              <div class="mini-stat">
+                <span class="mini-stat-value" data-count="98">98%</span>
+                <span class="mini-stat-label" data-i18n="hero.stat_satisfaction_label">Satisfaction</span>
+              </div>
+              <div class="mini-stat-divider"></div>
+              <div class="mini-stat">
+                <span class="mini-stat-value">&lt;48h</span>
+                <span class="mini-stat-label" data-i18n="hero.stat_response_label">Response</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual -->
+        <div class="hero-visual reveal-scale">
+          <!-- Floating analytics card -->
+          <div class="floating-card stat-card stat-card-1 parallax-element">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <div class="stat-content">
+              <span class="stat-label" data-i18n="hero.card_conversion_label">Conversion Rate</span>
+              <span class="stat-value" data-count="32.4">+32.4%</span>
+            </div>
+            <div class="stat-sparkline">
+              <svg viewBox="0 0 60 24" fill="none">
+                <polyline points="0,20 8,16 16,18 24,10 32,12 40,6 48,8 56,2 60,4" stroke="var(--color-green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <linearGradient id="spark1" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="var(--color-green)" stop-opacity="0.2"/>
+                  <stop offset="100%" stop-color="var(--color-green)" stop-opacity="0"/>
+                </linearGradient>
+                <polygon points="0,20 8,16 16,18 24,10 32,12 40,6 48,8 56,2 60,4 60,24 0,24" fill="url(#spark1)"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Floating growth card -->
+          <div class="floating-card stat-card stat-card-2 parallax-element">
+            <div class="stat-icon stat-icon-warm">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="20" x2="12" y2="10"></line>
+                <line x1="18" y1="20" x2="18" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="16"></line>
+              </svg>
+            </div>
+            <div class="stat-content">
+              <span class="stat-label" data-i18n="hero.card_revenue_label">Revenue Growth</span>
+              <span class="stat-value stat-value-warm" data-count="2.8">2.8x</span>
+            </div>
+          </div>
+
+          <!-- Floating leads card -->
+          <div class="floating-card stat-card stat-card-3 parallax-element">
+            <div class="stat-icon stat-icon-blue">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="stat-content">
+              <span class="stat-label" data-i18n="hero.card_leads_label">New Leads/Month</span>
+              <span class="stat-value stat-value-blue" data-count="47">+47</span>
+            </div>
+          </div>
+
+          <!-- Professional Image -->
+          <div class="hero-image-wrapper parallax-img">
+            <div class="image-glow"></div>
+            <img src="img/Erradi.Youssef.Dev.png" data-i18n-attr="alt:hero.image_alt" alt="Youssef Erradi — Web Developer & Consultant" class="person-img">
+          </div>
+
+          <!-- Decorative ring -->
+          <div class="hero-ring"></div>
+        </div>
+      </div>
+
+      <!-- Grid mesh background -->
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator reveal-fade">
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- PROBLEM & SOLUTION SECTION -->
+    <section class="section problem-section" id="problem">
+      <div class="container">
+        <!-- Header -->
+        <div class="text-center section-header reveal-fade-up">
+          <span class="badge badge-red" data-i18n="problem.badge">The Hard Truth</span>
+          <h2>
+            <span data-i18n="problem.title_line1">Every day, your website is</span><br>
+            <em class="text-accent-red" data-i18n="problem.title_em">losing you money.</em>
+          </h2>
+          <p class="subtitle mx-auto" data-i18n="problem.subtitle">You're investing in ads, creating content, driving traffic — but none of it matters if your website can't convert. Most don't.</p>
+        </div>
+
+        <!-- Cinematic Story Block -->
+        <div class="story-block reveal-fade-up" id="storyBlock">
+          <div class="story-label">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <span data-i18n="problem.story_label">This is happening right now</span>
+          </div>
+          <div class="story-steps story-cinematic">
+            <div class="story-line" data-delay="0">
+              <span class="story-arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icon-chevron"><path d="M9 18l6-6-6-6"/></svg>
+              </span>
+              <p data-i18n="problem.story_steps[0]">A potential client searches for exactly what you offer.</p>
+            </div>
+            <div class="story-line" data-delay="1">
+              <span class="story-arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icon-chevron"><path d="M9 18l6-6-6-6"/></svg>
+              </span>
+              <p data-i18n="problem.story_steps[1]">They click. Your website takes too long to load.</p>
+            </div>
+            <div class="story-line" data-delay="2">
+              <span class="story-arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icon-chevron"><path d="M9 18l6-6-6-6"/></svg>
+              </span>
+              <p data-i18n="problem.story_steps[2]">They can't understand what you do within 3 seconds.</p>
+            </div>
+            <div class="story-line" data-delay="3">
+              <span class="story-arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icon-chevron"><path d="M9 18l6-6-6-6"/></svg>
+              </span>
+              <p data-i18n="problem.story_steps[3]">There's no clear next step. No CTA. No direction.</p>
+            </div>
+            <div class="story-line" data-delay="4">
+              <span class="story-arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icon-chevron"><path d="M9 18l6-6-6-6"/></svg>
+              </span>
+              <p data-i18n="problem.story_steps[4]">They close the tab. Gone forever.</p>
+            </div>
+            <div class="story-line story-line-loss" data-delay="5">
+              <span class="story-arrow story-arrow-red">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icon-chevron"><path d="M9 18l6-6-6-6"/></svg>
+              </span>
+              <p data-i18n="problem.story_steps[5]">Your competitor gets the deal.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem Cards -->
+        <div class="problem-cards-grid">
+          <div class="problem-card reveal-fade-up">
+            <div class="problem-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 15h8"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+              </svg>
+            </div>
+            <h4 data-i18n="problem.cards[0].title">Visitors Don't Understand What You Do</h4>
+            <p data-i18n="problem.cards[0].desc">Unclear headline, no value proposition, cluttered layout. They leave in under 5 seconds without reading a single word.</p>
+            <div class="problem-stat">
+              <span class="problem-stat-num" data-i18n="problem.cards[0].stat_num">88%</span>
+              <span data-i18n="problem.cards[0].stat_text">of visitors never come back after a bad first impression</span>
+            </div>
+          </div>
+
+          <div class="problem-card reveal-fade-up" style="transition-delay: 0.08s">
+            <div class="problem-icon problem-icon-amber">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <h4 data-i18n="problem.cards[1].title">No Clear Path to Contact You</h4>
+            <p data-i18n="problem.cards[1].desc">No strategic CTAs, no funnel, no urgency. Users scroll your entire page and leave without knowing what to do next.</p>
+            <div class="problem-stat">
+              <span class="problem-stat-num" data-i18n="problem.cards[1].stat_num">70%</span>
+              <span data-i18n="problem.cards[1].stat_text">of small business websites have zero conversion strategy</span>
+            </div>
+          </div>
+
+          <div class="problem-card reveal-fade-up" style="transition-delay: 0.16s">
+            <div class="problem-icon problem-icon-purple">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <h4 data-i18n="problem.cards[2].title">You're Not Capturing Any Leads</h4>
+            <p data-i18n="problem.cards[2].desc">No forms, no automation, no follow-up system. Every visitor who doesn't convert on the spot is lost permanently.</p>
+            <div class="problem-stat">
+              <span class="problem-stat-num" data-i18n="problem.cards[2].stat_num">96%</span>
+              <span data-i18n="problem.cards[2].stat_text">of visitors aren't ready to buy on their first visit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contrast Block -->
+        <div class="contrast-block reveal-fade-up">
+          <div class="contrast-col contrast-bad">
+            <div class="contrast-header">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+              <span data-i18n="problem.contrast_bad_title">Typical Website</span>
+            </div>
+            <ul>
+              <li data-i18n="problem.contrast_bad[0]">Looks good but doesn't convert</li>
+              <li data-i18n="problem.contrast_bad[1]">No clear CTA or user flow</li>
+              <li data-i18n="problem.contrast_bad[2]">No lead capture system</li>
+              <li data-i18n="problem.contrast_bad[3]">"Contact us" buried in the footer</li>
+              <li data-i18n="problem.contrast_bad[4]">Passive — waits and hopes for results</li>
+            </ul>
+          </div>
+          <div class="contrast-divider">
+            <span data-i18n="problem.contrast_vs">vs</span>
+          </div>
+          <div class="contrast-col contrast-good">
+            <div class="contrast-header">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span data-i18n="problem.contrast_good_title">High-Converting System</span>
+            </div>
+            <ul>
+              <li data-i18n="problem.contrast_good[0]">Clear messaging that hooks in 3 seconds</li>
+              <li data-i18n="problem.contrast_good[1]">Every page optimized for conversion</li>
+              <li data-i18n="problem.contrast_good[2]">Automated lead capture + follow-up</li>
+              <li data-i18n="problem.contrast_good[3]">Strategic CTAs that drive action</li>
+              <li data-i18n="problem.contrast_good[4]">Built to generate revenue on autopilot</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Transition Line -->
+        <div class="transition-line reveal-fade-up">
+          <div class="transition-divider"></div>
+          <p data-i18n="problem.transition">It doesn't have to be this way.</p>
+        </div>
+
+        <!-- Solution Card -->
+        <div class="solution-card reveal-scale">
+          <div class="solution-glow"></div>
+          <span class="badge badge-accent" data-i18n="problem.solution_badge">The Solution</span>
+          <h3>
+            <span data-i18n="problem.solution_title_line1">I turn your website into a</span><br>
+            <span data-i18n="problem.solution_title_em">client acquisition machine.</span>
+          </h3>
+          <p data-i18n-html="problem.solution_desc_html">Every project I build follows one framework: <strong>Capture attention</strong>, <strong>build instant trust</strong>, and <strong>drive visitors to take action</strong>. No guesswork. Just proven structure that converts.</p>
+          <div class="solution-visual">
+            <div class="flow-step">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg>
+              <span data-i18n="problem.flow_visit">Visit</span>
+            </div>
+            <svg class="flow-arrow icon-arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+            <div class="flow-step">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span data-i18n="problem.flow_trust">Trust</span>
+            </div>
+            <svg class="flow-arrow icon-arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+            <div class="flow-step active">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="problem.flow_convert">Convert</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- SERVICES SECTION -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="text-center section-header reveal-fade-up">
+          <span class="badge" data-i18n="services.badge">Services</span>
+          <h2>
+            <span data-i18n="services.title_line1">Three pillars of</span>
+            <em class="text-accent" data-i18n="services.title_em">digital growth.</em>
+          </h2>
+          <p class="subtitle mx-auto" data-i18n="services.subtitle">Attract clients with high-converting websites. Convert leads with automation. Scale operations with custom systems.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Client Acquisition System -->
+          <div class="service-card service-card-recommended reveal-fade-up">
+            <div class="service-header">
+              <div class="service-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <span class="service-tag" data-i18n="services.cards[0].tag">Recommended</span>
+            </div>
+            <span class="service-role" data-i18n="services.cards[0].role">Attract clients</span>
+            <div class="service-result" data-i18n="services.cards[0].result">Get more clients</div>
+            <div class="service-tm" data-i18n="services.cards[0].tm">Client Acquisition System&trade;</div>
+            <p data-i18n="services.cards[0].desc">A website engineered to turn every visitor into a lead — built around strategy, not just design.</p>
+            <ul class="feature-list">
+              <li data-i18n="services.cards[0].features[0]">Messaging that hooks visitors in under 3 seconds</li>
+              <li data-i18n="services.cards[0].features[1]">A clear path from landing to contacting you</li>
+              <li data-i18n="services.cards[0].features[2]">Pages that load fast and rank on Google</li>
+              <li data-i18n="services.cards[0].features[3]">Mobile experience that matches how people browse</li>
+            </ul>
+            <div class="service-outcome">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+              <span data-i18n="services.cards[0].outcome">Your website becomes a 24/7 client-generating machine.</span>
+            </div>
+            <a href="#contact" class="btn btn-primary btn-service">
+              <span data-i18n="services.cards[0].cta">Get More Clients</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="icon-arrow-right">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Card 2: Lead Automation Engine -->
+          <div class="service-card reveal-fade-up" style="transition-delay: 0.1s">
+            <div class="service-header">
+              <div class="service-icon-wrap service-icon-blue">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+            </div>
+            <span class="service-role service-role-blue" data-i18n="services.cards[1].role">Convert &amp; follow up</span>
+            <div class="service-result" data-i18n="services.cards[1].result">Automate your leads</div>
+            <div class="service-tm" data-i18n="services.cards[1].tm">Lead Automation Engine&trade;</div>
+            <p data-i18n="services.cards[1].desc">Capture every lead, respond instantly, and follow up automatically — without lifting a finger.</p>
+            <ul class="feature-list">
+              <li data-i18n="services.cards[1].features[0]">Never lose a lead to slow response time again</li>
+              <li data-i18n="services.cards[1].features[1]">Instant WhatsApp &amp; email follow-ups on autopilot</li>
+              <li data-i18n="services.cards[1].features[2]">Leads routed directly into your CRM</li>
+              <li data-i18n="services.cards[1].features[3]">Save 10+ hours per week on manual tasks</li>
+            </ul>
+            <div class="service-outcome">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+              <span data-i18n="services.cards[1].outcome">Close more deals with zero manual work.</span>
+            </div>
+            <a href="#contact" class="btn btn-ghost btn-service">
+              <span data-i18n="services.cards[1].cta">Automate My Leads</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="icon-arrow-right">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Card 3: Business Systems & Dashboards -->
+          <div class="service-card service-card-systems reveal-fade-up" style="transition-delay: 0.2s">
+            <div class="service-header">
+              <div class="service-icon-wrap service-icon-purple">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <span class="service-tag service-tag-enterprise" data-i18n="services.cards[2].tag">For Companies &amp; Operations</span>
+            </div>
+            <span class="service-role service-role-purple" data-i18n="services.cards[2].role">Scale operations</span>
+            <div class="service-result" data-i18n="services.cards[2].result">Run your business on real software</div>
+            <div class="service-tm" data-i18n="services.cards[2].tm">Business Systems &amp; Dashboards&trade;</div>
+            <p data-i18n="services.cards[2].desc">Custom-built internal systems for companies to manage data, operations, and workflows — replacing spreadsheets with enterprise-grade tools.</p>
+            <ul class="feature-list">
+              <li data-i18n="services.cards[2].features[0]">SQL dashboards &amp; real-time reporting</li>
+              <li data-i18n="services.cards[2].features[1]">Production tracking &amp; operations systems</li>
+              <li data-i18n="services.cards[2].features[2]">Internal business applications</li>
+              <li data-i18n="services.cards[2].features[3]">Custom integrations across your entire stack</li>
+            </ul>
+            <div class="service-outcome">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+              <span data-i18n="services.cards[2].outcome">Your operations run on custom software — not spreadsheets.</span>
+            </div>
+            <a href="#contact" class="btn btn-ghost btn-service">
+              <span data-i18n="services.cards[2].cta">Build My System</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="icon-arrow-right">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Micro CTA -->
+        <div class="micro-cta reveal-fade-up">
+          <a href="#contact" data-i18n="services.micro_cta">Want me to review your current system?</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- MOBILE APPS / GOOGLE PLAY SECTION -->
+    <section class="section apps-section" id="apps" aria-labelledby="apps-title">
+      <div class="container">
+        <div class="apps-shell reveal-scale">
+          <div class="apps-grid">
+            <div class="apps-content">
+              <span class="badge badge-glass" data-i18n="apps.badge">Mobile Apps Studio</span>
+              <h2 id="apps-title">
+                <span data-i18n="apps.title_line1">Websites, automation, and</span>
+                <em class="text-accent" data-i18n="apps.title_em">mobile apps on Google Play.</em>
+              </h2>
+              <p class="apps-lead" data-i18n="apps.subtitle">Youssef Erradi Labs builds polished Android experiences that extend your business beyond the browser — fast, branded, and ready for real users.</p>
+
+              <div class="apps-actions">
+                <a class="google-play-badge" href="https://play.google.com/store/search?q=Youssef%20Erradi%20Labs&c=apps" target="_blank" rel="noopener noreferrer" data-i18n-attr="aria-label:apps.play_aria" aria-label="View Youssef Erradi Labs on Google Play">
+                  <span class="play-icon" aria-hidden="true">
+                    <svg viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.8 1.8C2 2.6 1.5 3.9 1.5 5.6v24.8c0 1.7.5 3 1.3 3.8l.1.1L17 18.2v-.4L2.9 1.7l-.1.1Z" fill="#7dd3fc"/>
+                      <path d="m21.7 23 4.7-2.7c1.3-.8 2.1-1.8 2.1-2.9s-.8-2.1-2.1-2.9l-4.8-2.7-4.8 5.5v.4l4.9 5.3Z" fill="#facc15"/>
+                      <path d="m21.7 23-4.9-5.3L2.8 34c1.1 1.1 2.8 1.2 4.7.1L21.7 23Z" fill="#fb7185"/>
+                      <path d="M21.7 12 7.5 3.9C5.6 2.8 3.9 2.9 2.8 4l14 13.9L21.7 12Z" fill="#34d399"/>
+                    </svg>
+                  </span>
+                  <span>
+                    <span class="play-overline" data-i18n="apps.play_overline">Available on</span>
+                    <strong data-i18n="apps.play_label">Google Play</strong>
+                  </span>
+                </a>
+                <a href="#contact" class="btn btn-primary btn-apps">
+                  <span data-i18n="apps.cta_primary">Build My App</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="icon-arrow-right">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="apps-trust-row" aria-label="Mobile app capabilities">
+                <span data-i18n="apps.trust[0]">Android-ready delivery</span>
+                <span data-i18n="apps.trust[1]">Brand-consistent UX</span>
+                <span data-i18n="apps.trust[2]">Store presence support</span>
+              </div>
+
+              <div class="apps-stats">
+                <div class="app-stat">
+                  <strong class="app-stat-number" data-i18n="apps.stats[0].number">3+</strong>
+                  <span data-i18n="apps.stats[0].label">App categories</span>
+                </div>
+                <div class="app-stat">
+                  <strong class="app-stat-number" data-i18n="apps.stats[1].number">24/7</strong>
+                  <span data-i18n="apps.stats[1].label">Mobile visibility</span>
+                </div>
+                <div class="app-stat">
+                  <strong class="app-stat-number" data-i18n="apps.stats[2].number">Play</strong>
+                  <span data-i18n="apps.stats[2].label">Distribution channel</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="apps-visual" aria-hidden="true">
+              <div class="phone-orbit"></div>
+              <div class="phone-mockup phone-main">
+                <div class="phone-speaker"></div>
+                <div class="phone-screen">
+                  <div class="app-topbar">
+                    <span class="app-dot"></span>
+                    <span>YE Labs</span>
+                  </div>
+                  <div class="app-hero-card">
+                    <span data-i18n="apps.mockup.main_label">Launch Suite</span>
+                    <strong data-i18n="apps.mockup.main_title">Mobile product system</strong>
+                  </div>
+                  <div class="app-metric-grid">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                  <div class="app-progress">
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="phone-mockup phone-secondary">
+                <div class="phone-speaker"></div>
+                <div class="phone-screen phone-screen-alt">
+                  <div class="mini-app-icon">YE</div>
+                  <span data-i18n="apps.mockup.secondary_label">Google Play</span>
+                  <strong data-i18n="apps.mockup.secondary_title">Trusted app presence</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="app-showcase-grid">
+            <article class="app-showcase-card">
+              <div class="app-card-icon app-card-icon-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M9 18h6"/></svg>
+              </div>
+              <span data-i18n="apps.cards[0].kicker">Client apps</span>
+              <h3 data-i18n="apps.cards[0].title">Service booking & lead capture</h3>
+              <p data-i18n="apps.cards[0].desc">Mobile funnels that help clients request quotes, book calls, and stay connected from their phone.</p>
+            </article>
+            <article class="app-showcase-card">
+              <div class="app-card-icon app-card-icon-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg>
+              </div>
+              <span data-i18n="apps.cards[1].kicker">Business tools</span>
+              <h3 data-i18n="apps.cards[1].title">Dashboards in your pocket</h3>
+              <p data-i18n="apps.cards[1].desc">Operational views, reports, and internal workflows designed for teams that move fast.</p>
+            </article>
+            <article class="app-showcase-card">
+              <div class="app-card-icon app-card-icon-green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-5"/></svg>
+              </div>
+              <span data-i18n="apps.cards[2].kicker">Store-ready</span>
+              <h3 data-i18n="apps.cards[2].title">Launch polish for Google Play</h3>
+              <p data-i18n="apps.cards[2].desc">Clean branding, responsive interfaces, and store-facing assets aligned with your company identity.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE / DIFFERENTIATION -->
+    <section class="section section-dark" id="value">
+      <div class="container">
+        <div class="value-wrapper reveal-scale">
+          <div class="value-header">
+            <span class="badge badge-glass" data-i18n="value.badge">Why Me</span>
+            <h2>
+              <span data-i18n="value.title_line1">I don't build websites. I build</span>
+              <em class="text-accent" data-i18n="value.title_em">business infrastructure.</em>
+            </h2>
+            <p class="subtitle" data-i18n="value.subtitle">Most developers give you a design. I give you a system engineered to generate revenue and streamline operations.</p>
+            <p class="value-positioning" data-i18n="value.positioning">Built for companies, not just websites.</p>
+          </div>
+          <div class="value-grid">
+            <div class="value-item reveal-fade-up">
+              <div class="value-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <h4 data-i18n="value.items[0].title">I Think Like a Business Owner</h4>
+              <p data-i18n="value.items[0].desc">I don't just code — I understand your revenue model and build around it</p>
+            </div>
+            <div class="value-item reveal-fade-up" style="transition-delay: 0.1s">
+              <div class="value-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M2 12h4l2-9 5 18 2-9h5"></path>
+                </svg>
+              </div>
+              <h4 data-i18n="value.items[1].title">Every Pixel Has a Job</h4>
+              <p data-i18n="value.items[1].desc">Nothing decorative. Every element exists to move visitors closer to becoming clients</p>
+            </div>
+            <div class="value-item reveal-fade-up" style="transition-delay: 0.2s">
+              <div class="value-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+              </div>
+              <h4 data-i18n="value.items[2].title">Clarity Over Complexity</h4>
+              <p data-i18n="value.items[2].desc">Clean structure, fast performance, zero confusion — visitors know exactly what to do</p>
+            </div>
+            <div class="value-item reveal-fade-up" style="transition-delay: 0.3s">
+              <div class="value-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </div>
+              <h4 data-i18n="value.items[3].title">Built to Scale With You</h4>
+              <p data-i18n="value.items[3].desc">Your website today handles 10 clients. I build it to handle 1,000 without breaking</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- PROCESS SECTION -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="text-center section-header reveal-fade-up">
+          <span class="badge" data-i18n="process.badge">Process</span>
+          <h2>
+            <span data-i18n="process.title_line1">From first call to live in</span>
+            <em class="text-accent" data-i18n="process.title_em">under 3 weeks.</em>
+          </h2>
+          <p class="subtitle mx-auto" data-i18n="process.subtitle">A proven 4-step process. No bloat. No delays. Just focused execution.</p>
+        </div>
+
+        <div class="timeline-grid">
+          <div class="timeline-step reveal-fade-up">
+            <div class="step-number">01</div>
+            <div class="step-line"></div>
+            <h3 data-i18n="process.steps[0].title">Deep Dive</h3>
+            <p data-i18n="process.steps[0].desc">I learn your business, your clients, and what makes them buy</p>
+            <span class="step-deliverable">
+              <span data-i18n="process.deliverable_label">Deliverable:</span>
+              <span data-i18n="process.steps[0].deliverable">Clear action plan</span>
+            </span>
+          </div>
+          <div class="timeline-step reveal-fade-up" style="transition-delay: 0.1s">
+            <div class="step-number">02</div>
+            <div class="step-line"></div>
+            <h3 data-i18n="process.steps[1].title">Strategy &amp; Structure</h3>
+            <p data-i18n="process.steps[1].desc">I map the conversion flow, messaging, and page architecture</p>
+            <span class="step-deliverable">
+              <span data-i18n="process.deliverable_label">Deliverable:</span>
+              <span data-i18n="process.steps[1].deliverable">System blueprint</span>
+            </span>
+          </div>
+          <div class="timeline-step reveal-fade-up" style="transition-delay: 0.2s">
+            <div class="step-number">03</div>
+            <div class="step-line"></div>
+            <h3 data-i18n="process.steps[2].title">Build &amp; Refine</h3>
+            <p data-i18n="process.steps[2].desc">I design, develop, and optimize until every element converts</p>
+            <span class="step-deliverable">
+              <span data-i18n="process.deliverable_label">Deliverable:</span>
+              <span data-i18n="process.steps[2].deliverable">Complete system</span>
+            </span>
+          </div>
+          <div class="timeline-step reveal-fade-up" style="transition-delay: 0.3s">
+            <div class="step-number">04</div>
+            <div class="step-line"></div>
+            <h3 data-i18n="process.steps[3].title">Launch &amp; Support</h3>
+            <p data-i18n="process.steps[3].desc">Go live with confidence — I monitor, tweak, and support post-launch</p>
+            <span class="step-deliverable">
+              <span data-i18n="process.deliverable_label">Deliverable:</span>
+              <span data-i18n="process.steps[3].deliverable">Live &amp; optimized</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section class="section section-alt" id="pricing">
+      <div class="container">
+        <div class="text-center section-header reveal-fade-up">
+          <span class="badge" data-i18n="pricing.badge">Pricing &amp; Plans</span>
+          <h2>
+            <span data-i18n="pricing.title_line1">Choose the plan that fits your</span>
+            <em class="text-accent" data-i18n="pricing.title_em">ambition.</em>
+          </h2>
+          <p class="subtitle mx-auto" data-i18n="pricing.subtitle">No hidden fees. No surprises. Pick a plan, and let's start building your growth engine.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Starter -->
+          <div class="pricing-card reveal-fade-up">
+            <div class="plan-header">
+              <span class="plan-tier" data-i18n="pricing.plans[0].tier">Starter</span>
+              <div class="plan-result" data-i18n="pricing.plans[0].result">Launch a professional website that builds trust and credibility.</div>
+              <h3 class="plan-price">
+                <span class="price-currency" data-i18n="pricing.plans[0].currency">$</span><span class="price-amount" data-i18n="pricing.plans[0].price">1,500</span><span class="price-plus" data-i18n="pricing.plans[0].plus"></span>
+              </h3>
+              <p class="plan-who" data-i18n="pricing.plans[0].who">Best for small businesses launching their first professional web presence.</p>
+            </div>
+            <ul class="plan-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.plans[0].features[0]">Conversion-focused design</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.plans[0].features[1]">Mobile optimization</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.plans[0].features[2]">Fast performance (under 2s load)</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.plans[0].features[3]">Clear messaging &amp; CTA placement</span>
+              </li>
+            </ul>
+            <p class="plan-roi" data-i18n="pricing.plans[0].roi">One new client covers the entire investment.</p>
+            <a href="#contact" class="btn btn-outline btn-full" data-i18n="pricing.plans[0].cta">Get Started</a>
+          </div>
+
+          <!-- Growth (Featured) -->
+          <div class="pricing-card pricing-featured reveal-scale">
+            <div class="plan-badge" data-i18n="pricing.plans[1].badge">Most Clients Start Here</div>
+            <div class="plan-header">
+              <span class="plan-tier" data-i18n="pricing.plans[1].tier">Growth</span>
+              <div class="plan-result" data-i18n="pricing.plans[1].result">Generate consistent leads and convert visitors into clients.</div>
+              <h3 class="plan-price">
+                <span class="price-currency" data-i18n="pricing.plans[1].currency">$</span><span class="price-amount" data-i18n="pricing.plans[1].price">3,000</span><span class="price-plus" data-i18n="pricing.plans[1].plus"></span>
+              </h3>
+              <p class="plan-who" data-i18n="pricing.plans[1].who">Best for businesses that want to generate consistent leads from their website.</p>
+            </div>
+            <ul class="plan-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.plans[1].features[0]">Everything in Starter</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.plans[1].features[1]">Lead capture system &amp; CTA funnel</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.plans[1].features[2]">Conversion optimization</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.plans[1].features[3]">Basic automation &amp; follow-up</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.plans[1].features[4]">Strategy session included</span>
+              </li>
+            </ul>
+            <p class="plan-roi" data-i18n="pricing.plans[1].roi">One client can pay for this entire system.</p>
+            <a href="#contact" class="btn btn-primary btn-full btn-glow" data-i18n="pricing.plans[1].cta">Get More Clients</a>
+          </div>
+
+          <!-- Scale -->
+          <div class="pricing-card reveal-fade-up" style="transition-delay: 0.1s">
+            <div class="plan-badge plan-badge-enterprise" data-i18n="pricing.plans[2].badge">For Companies</div>
+            <div class="plan-header">
+              <span class="plan-tier" data-i18n="pricing.plans[2].tier">Scale</span>
+              <div class="plan-result" data-i18n="pricing.plans[2].result">Build a complete digital system that grows your business automatically.</div>
+              <h3 class="plan-price">
+                <span class="price-currency" data-i18n="pricing.plans[2].currency">$</span><span class="price-amount" data-i18n="pricing.plans[2].price">6,000</span><span class="price-plus" data-i18n="pricing.plans[2].plus">+</span>
+              </h3>
+              <p class="plan-who" data-i18n="pricing.plans[2].who">Best for companies that need a full system — website, automation, and custom tools.</p>
+            </div>
+            <ul class="plan-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.plans[2].features[0]">Full system (website + automation)</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.plans[2].features[1]">Advanced workflows &amp; sequences</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.plans[2].features[2]">Custom integrations (CRM, APIs)</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.plans[2].features[3]">Performance optimization &amp; analytics</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.plans[2].features[4]">Priority support &amp; ongoing optimization</span>
+              </li>
+            </ul>
+            <p class="plan-roi" data-i18n="pricing.plans[2].roi">Built for real business results — systems that pay for themselves.</p>
+            <a href="#contact" class="btn btn-outline btn-full" data-i18n="pricing.plans[2].cta">Build My System</a>
+          </div>
+        </div>
+
+        <!-- Consulting & Training -->
+        <div class="consulting-block reveal-fade-up">
+          <div class="consulting-content">
+            <div class="consulting-header">
+              <span class="badge badge-glass">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                <span data-i18n="pricing.consulting.badge">Expert Guidance</span>
+              </span>
+              <h3 data-i18n="pricing.consulting.title">Consulting &amp; Technical Advisory</h3>
+              <p class="consult-audience" data-i18n="pricing.consulting.audience">For developers &amp; companies</p>
+              <p data-i18n="pricing.consulting.desc">Solve real production problems, improve system performance, and build scalable architecture with expert guidance.</p>
+            </div>
+            <ul class="consulting-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.consulting.list[0]">Production debugging &amp; troubleshooting</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.consulting.list[1]">Performance optimization &amp; load testing</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.consulting.list[2]">Scalable architecture design</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="pricing.consulting.list[3]">Code review &amp; system audits</span>
+              </li>
+            </ul>
+          </div>
+          <div class="consulting-pricing">
+            <div class="consult-option">
+              <div class="consult-head">
+                <h4 data-i18n="pricing.consulting.hourly_title">Hourly Session</h4>
+                <span class="consult-price">
+                  <span data-i18n="pricing.consulting.hourly_price">$75</span><small data-i18n="pricing.consulting.hourly_suffix">/hr</small>
+                </span>
+              </div>
+              <p data-i18n="pricing.consulting.hourly_desc">Targeted deep dive into a specific production problem.</p>
+            </div>
+            <div class="consult-option consult-highlight">
+              <div class="consult-head">
+                <h4 data-i18n="pricing.consulting.package_title">4-Session Package</h4>
+                <span class="consult-price">
+                  <span data-i18n="pricing.consulting.package_price">$250</span><small class="consult-save" data-i18n="pricing.consulting.package_save">Save 17%</small>
+                </span>
+              </div>
+              <p data-i18n="pricing.consulting.package_desc">Structured advisory across multiple sessions for complex systems.</p>
+            </div>
+            <a href="#contact" class="btn btn-primary btn-service" style="margin-top: 8px;">
+              <span data-i18n="pricing.consulting.cta">Book a Session</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="icon-arrow-right">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Add-ons & Maintenance -->
+        <div class="addons-wrapper reveal-fade-up">
+          <!-- Maintenance -->
+          <div class="addon-card">
+            <h3 data-i18n="pricing.maintenance.title">Maintenance &amp; Support</h3>
+            <p class="addon-desc" data-i18n="pricing.maintenance.desc">Keep your website running smoothly, secure, and continuously improving.</p>
+            <div class="maintenance-options">
+              <div class="m-option">
+                <div class="m-head">
+                  <h4 data-i18n="pricing.maintenance.basic_title">Basic</h4>
+                  <span class="m-price">
+                    <span data-i18n="pricing.maintenance.basic_price">$50</span><small data-i18n="pricing.maintenance.basic_suffix">/mo</small>
+                  </span>
+                </div>
+                <ul>
+                  <li data-i18n="pricing.maintenance.basic_items[0]">Bug fixes</li>
+                  <li data-i18n="pricing.maintenance.basic_items[1]">Small updates</li>
+                </ul>
+              </div>
+              <div class="m-option m-highlight">
+                <div class="m-head">
+                  <h4 data-i18n="pricing.maintenance.pro_title">Pro</h4>
+                  <span class="m-price">
+                    <span data-i18n="pricing.maintenance.pro_price">$150</span><small data-i18n="pricing.maintenance.pro_suffix">/mo</small>
+                  </span>
+                </div>
+                <ul>
+                  <li data-i18n="pricing.maintenance.pro_items[0]">Priority support</li>
+                  <li data-i18n="pricing.maintenance.pro_items[1]">Monthly improvements</li>
+                  <li data-i18n="pricing.maintenance.pro_items[2]">Performance monitoring</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-outline btn-full" style="margin-top: 16px;" data-i18n="pricing.maintenance.cta">Keep My Website Running</a>
+          </div>
+
+          <!-- Add-ons -->
+          <div class="addon-card">
+            <h3 data-i18n="pricing.addons.title">Power Add-ons</h3>
+            <div class="upsell-list">
+              <div class="u-item">
+                <div class="u-info">
+                  <strong data-i18n="pricing.addons.items[0].name">SEO Optimization</strong>
+                  <span data-i18n="pricing.addons.items[0].desc">Rank higher, get free traffic</span>
+                </div>
+                <div class="u-price" data-i18n="pricing.addons.items[0].price">$500</div>
+              </div>
+              <div class="u-item">
+                <div class="u-info">
+                  <strong data-i18n="pricing.addons.items[1].name">Speed Optimization</strong>
+                  <span data-i18n="pricing.addons.items[1].desc">Sub-2s load times guaranteed</span>
+                </div>
+                <div class="u-price" data-i18n="pricing.addons.items[1].price">$300</div>
+              </div>
+              <div class="u-item">
+                <div class="u-info">
+                  <strong data-i18n="pricing.addons.items[2].name">API Integration</strong>
+                  <span data-i18n="pricing.addons.items[2].desc">Connect any tool or service</span>
+                </div>
+                <div class="u-price" data-i18n="pricing.addons.items[2].price">$800</div>
+              </div>
+              <div class="u-item">
+                <div class="u-info">
+                  <strong data-i18n="pricing.addons.items[3].name">AI-Powered Features</strong>
+                  <span data-i18n="pricing.addons.items[3].desc">Chatbots, generators, smart tools</span>
+                </div>
+                <div class="u-price" data-i18n="pricing.addons.items[3].price">$1,000+</div>
+              </div>
+              <div class="u-item">
+                <div class="u-info">
+                  <strong data-i18n="pricing.addons.items[4].name">Multi-language</strong>
+                  <span data-i18n="pricing.addons.items[4].desc">Expand your audience reach</span>
+                </div>
+                <div class="u-price" data-i18n="pricing.addons.items[4].price">$400</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK / CASE STUDIES -->
+    <section class="section section-dark" id="work">
+      <div class="container">
+        <div class="text-center section-header reveal-fade-up">
+          <span class="badge badge-glass" data-i18n="work.badge">Results</span>
+          <h2>
+            <span data-i18n="work.title_line1">Selected</span>
+            <em class="text-accent" data-i18n="work.title_em">Work.</em>
+          </h2>
+          <p class="subtitle mx-auto" data-i18n="work.subtitle">Real projects. Real results. Here's what I've built for businesses like yours.</p>
+        </div>
+
+        <div class="case-studies-grid">
+          <!-- Case Study 1 -->
+          <div class="case-card reveal-fade-up">
+            <div class="case-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <div class="case-content">
+              <span class="case-industry" data-i18n="work.cases[0].industry">Food Industry</span>
+              <h3 data-i18n="work.cases[0].title">Cuisine Solution System</h3>
+              <p class="case-type" data-i18n="work.cases[0].type">Internal Production Systems &amp; Dashboards</p>
+              <p data-i18n="work.cases[0].desc">Built custom production tracking systems and SQL dashboards to manage daily operations — replacing spreadsheets with real-time visibility across the production floor.</p>
+              <div class="case-result">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                <span data-i18n="work.cases[0].result">Reduced manual reporting by 80% · Real-time production visibility</span>
+              </div>
+              <div class="case-tags">
+                <span data-i18n="work.cases[0].tags[0]">SQL Dashboard</span>
+                <span data-i18n="work.cases[0].tags[1]">Production Tracking</span>
+                <span data-i18n="work.cases[0].tags[2]">Internal Tools</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 2 -->
+          <div class="case-card reveal-fade-up" style="transition-delay: 0.1s">
+            <div class="case-icon case-icon-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="case-content">
+              <span class="case-industry" data-i18n="work.cases[1].industry">Tech / IT Services</span>
+              <h3 data-i18n="work.cases[1].title">EGTV Informatique</h3>
+              <p class="case-type" data-i18n="work.cases[1].type">Scalable Applications &amp; Reporting Tools</p>
+              <p data-i18n="work.cases[1].desc">Developed scalable web applications and reporting tools — enabling the company to track performance, manage clients, and automate internal workflows.</p>
+              <div class="case-result">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                <span data-i18n="work.cases[1].result">Automated client management · 3x faster reporting</span>
+              </div>
+              <div class="case-tags">
+                <span data-i18n="work.cases[1].tags[0]">Full-Stack App</span>
+                <span data-i18n="work.cases[1].tags[1]">Reporting</span>
+                <span data-i18n="work.cases[1].tags[2]">Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case Study 3 -->
+          <div class="case-card reveal-fade-up" style="transition-delay: 0.2s">
+            <div class="case-icon case-icon-green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <div class="case-content">
+              <span class="case-industry" data-i18n="work.cases[2].industry">SaaS / Digital Tools</span>
+              <h3 data-i18n="work.cases[2].title">SmartlyTools</h3>
+              <p class="case-type" data-i18n="work.cases[2].type">Online Tools Platform</p>
+              <p data-i18n="work.cases[2].desc">Built a full SaaS-style tools platform from scratch — fast, scalable, and designed for high-volume usage with a clean user experience.</p>
+              <div class="case-result">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                <span data-i18n="work.cases[2].result">Scalable architecture · Handles high-volume traffic</span>
+              </div>
+              <div class="case-tags">
+                <span data-i18n="work.cases[2].tags[0]">Platform</span>
+                <span data-i18n="work.cases[2].tags[1]">SaaS</span>
+                <span data-i18n="work.cases[2].tags[2]">Full-Stack</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case studies trust line -->
+        <p class="case-trust-line reveal-fade-up" data-i18n="work.trust_line">Used by businesses to improve operations and scale efficiently.</p>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ABOUT & TRUST SECTION -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- About left -->
+          <div class="about-content reveal-fade-up">
+            <span class="badge" data-i18n="about.badge">About Me</span>
+            <h2 data-i18n="about.title">Hi, I'm Youssef.</h2>
+            <p class="lead" data-i18n="about.lead">I'm not a designer who codes. I'm a full-stack developer who builds systems that drive business outcomes.</p>
+            <p data-i18n-html="about.p1_html">After building 50+ projects across food production, IT services, SaaS, and professional services, I've learned one thing: <strong>a great-looking website means nothing if it doesn't generate revenue or solve a real operational problem.</strong></p>
+            <p data-i18n="about.p2">That's why every project starts with your business goals — not a color palette. I build digital infrastructure that attracts clients, automates workflows, and scales with you.</p>
+            <div class="industries-served">
+              <span class="industries-label" data-i18n="about.industries_label">Industries served:</span>
+              <div class="industries-tags">
+                <span data-i18n="about.industries_tags[0]">Food &amp; Production</span>
+                <span data-i18n="about.industries_tags[1]">IT &amp; Tech</span>
+                <span data-i18n="about.industries_tags[2]">Professional Services</span>
+                <span data-i18n="about.industries_tags[3]">SaaS</span>
+              </div>
+            </div>
+            <div class="about-stats">
+              <div class="about-stat">
+                <span class="about-stat-number" data-i18n="about.stats[0].number">50+</span>
+                <span class="about-stat-label" data-i18n="about.stats[0].label">Projects</span>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat-number" data-i18n="about.stats[1].number">3+</span>
+                <span class="about-stat-label" data-i18n="about.stats[1].label">Years</span>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat-number" data-i18n="about.stats[2].number">100%</span>
+                <span class="about-stat-label" data-i18n="about.stats[2].label">Dedication</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trust Right -->
+          <div class="trust-card reveal-scale">
+            <h3 data-i18n="about.trust_title">Why clients keep coming back</h3>
+            <p class="trust-desc" data-i18n="about.trust_desc">I work with serious business owners who want results — not just deliverables.</p>
+            <ul class="trust-list">
+              <li>
+                <div class="trust-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <strong data-i18n="about.trust_items[0].title">Senior-level execution</strong>
+                  <span data-i18n="about.trust_items[0].desc">Clean code, modern stack, built to last</span>
+                </div>
+              </li>
+              <li>
+                <div class="trust-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <strong data-i18n="about.trust_items[1].title">Revenue-first mindset</strong>
+                  <span data-i18n="about.trust_items[1].desc">Every decision tied to your bottom line</span>
+                </div>
+              </li>
+              <li>
+                <div class="trust-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <strong data-i18n="about.trust_items[2].title">No BS communication</strong>
+                  <span data-i18n="about.trust_items[2].desc">Fast responses, honest timelines, zero fluff</span>
+                </div>
+              </li>
+              <li>
+                <div class="trust-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <strong data-i18n="about.trust_items[3].title">Long-term partnership</strong>
+                  <span data-i18n="about.trust_items[3].desc">I don't disappear after launch — I help you grow</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- FINAL CTA -->
+    <section class="section cta-section" id="contact">
+      <div class="container">
+        <div class="cta-wrapper reveal-scale">
+          <div class="cta-glow"></div>
+
+          <span class="badge badge-glass" data-i18n="cta.badge">Limited Availability</span>
+
+          <h2>
+            <span data-i18n="cta.title_line1">Stop losing clients to a</span><br>
+            <span data-i18n="cta.title_line2">website that doesn't</span>
+            <em class="text-accent" data-i18n="cta.title_em">convert.</em>
+          </h2>
+
+          <p class="cta-urgency" data-i18n="cta.urgency">Every day you wait, you lose potential clients to competitors with better systems.</p>
+          <p data-i18n="cta.value">I'll review your current website, identify what's costing you clients, and give you a clear action plan.</p>
+
+          <!-- Trust pills -->
+          <div class="cta-trust-pills">
+            <span class="cta-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="cta.pills[0]">No pressure</span>
+            </span>
+            <span class="cta-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="cta.pills[1]">No commitment</span>
+            </span>
+            <span class="cta-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="cta.pills[2]">Just clarity</span>
+            </span>
+          </div>
+
+          <!-- Primary CTA -->
+          <div class="cta-buttons">
+            <a href="https://wa.me/212000000000" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-glow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span data-i18n="cta.main_button">Book a Free Strategy Call</span>
+            </a>
+            <span class="cta-value" data-i18n="cta.main_value">Get a clear plan for your business — no commitment required</span>
+          </div>
+
+          <!-- Secondary contact options -->
+          <div class="cta-channels">
+            <span class="cta-channels-label" data-i18n="cta.channels_label">Prefer messaging? Reach out the way that works best for you.</span>
+            <div class="cta-channels-grid">
+              <!-- WhatsApp -->
+              <a href="https://wa.me/212000000000" target="_blank" rel="noopener" class="channel-card">
+                <div class="channel-icon channel-icon-whatsapp">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                  </svg>
+                </div>
+                <span data-i18n="cta.channels.whatsapp">WhatsApp</span>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com/in/youssef-erradi" target="_blank" rel="noopener" class="channel-card">
+                <div class="channel-icon channel-icon-linkedin">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </div>
+                <span data-i18n="cta.channels.linkedin">LinkedIn</span>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:contact@yousseferradi.com" class="channel-card">
+                <div class="channel-icon channel-icon-email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <span data-i18n="cta.channels.email">Email</span>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://instagram.com/yousseferradi" target="_blank" rel="noopener" class="channel-card">
+                <div class="channel-icon channel-icon-instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <span data-i18n="cta.channels.instagram">Instagram</span>
+              </a>
+            </div>
+          </div>
+
+          <p class="cta-note" data-i18n="cta.note">I respond within 24 hours · Limited availability · Only a few spots each month</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand -->
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <span class="footer-logo-mark">
+              <svg class="logo-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" data-i18n-attr="aria-label:a11y.ye_logo" aria-label="YE Logo">
+                <path d="M28 36L68 100" stroke="white" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M108 36L68 100" stroke="white" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M68 100V164" stroke="white" stroke-width="18" stroke-linecap="round"/>
+                <path d="M128 36V164" stroke="white" stroke-width="18" stroke-linecap="round"/>
+                <path d="M128 36H180" stroke="white" stroke-width="18" stroke-linecap="round"/>
+                <path d="M128 100H172" stroke="white" stroke-width="18" stroke-linecap="round"/>
+                <path d="M128 164H180" stroke="white" stroke-width="18" stroke-linecap="round"/>
+                <path d="M78 100H118" stroke="#818cf8" stroke-width="14" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </a>
+          <h3 class="footer-brand-name" data-i18n="logo.name">Youssef Erradi Labs</h3>
+          <p class="footer-tagline" data-i18n="footer.tagline">Systems that generate clients automatically.</p>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="footer-col">
+          <h4 data-i18n="footer.nav_title">Navigation</h4>
+          <a href="#hero" data-i18n="footer.links.home">Home</a>
+          <a href="#services" data-i18n="footer.links.services">Services</a>
+          <a href="#work" data-i18n="footer.links.work">Work</a>
+          <a href="#pricing" data-i18n="footer.links.pricing">Pricing</a>
+          <a href="#contact" data-i18n="footer.links.contact">Contact</a>
+        </div>
+
+        <!-- Column 3: Connect -->
+        <div class="footer-col">
+          <h4 data-i18n="footer.connect_title">Connect</h4>
+          <a href="https://linkedin.com/in/youssef-erradi" target="_blank" rel="noopener" class="footer-social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            <span data-i18n="footer.connect.linkedin">LinkedIn</span>
+          </a>
+          <a href="mailto:contact@yousseferradi.com" class="footer-social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            <span data-i18n="footer.connect.email">Email</span>
+          </a>
+          <a href="https://wa.me/212000000000" target="_blank" rel="noopener" class="footer-social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            <span data-i18n="footer.connect.whatsapp">WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Footer bottom -->
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">&copy; 2026 Youssef Erradi Labs. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" data-i18n-attr="aria-label:a11y.back_to_top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"></path>
+    </svg>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>

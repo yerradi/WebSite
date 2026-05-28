@@ -1,0 +1,468 @@
+{
+  "meta": {
+    "lang_name": "English",
+    "lang_short": "EN",
+    "title": "Youssef Erradi | Systems That Bring You Clients. Automatically.",
+    "description": "I build complete business systems — high-converting websites, lead automation, and custom dashboards — that generate revenue and streamline operations for growing companies."
+  },
+
+  "a11y": {
+    "ye_logo": "YE Logo",
+    "toggle_menu": "Toggle menu",
+    "back_to_top": "Back to top",
+    "language_selector": "Select language",
+    "open_language_menu": "Open language menu"
+  },
+
+  "logo": {
+    "name": "Youssef Erradi Labs",
+    "sub": "Systems • Automation • Growth"
+  },
+
+  "nav": {
+    "services": "Services",
+    "pricing": "Pricing",
+    "work": "Work",
+    "process": "Process",
+    "about": "About",
+    "cta": "Start Your Project"
+  },
+
+  "hero": {
+    "badge": "Limited Availability — 2 Spots Left This Month",
+    "title_line1": "Systems That Bring",
+    "title_line2": "You Clients.",
+    "title_em": "Automatically.",
+    "desc_html": "Not just websites — <strong>complete business systems</strong> that attract clients, capture leads on autopilot, and give you real-time visibility into your operations through custom dashboards and tools.",
+    "supporting": "Built for businesses that want predictable growth and automated operations.",
+    "cta_primary": "Book a Free Strategy Call",
+    "cta_secondary": "View My Work",
+    "trust": "Built real-world systems used by businesses to manage operations and workflows",
+    "stat_projects_label": "Projects",
+    "stat_satisfaction_label": "Satisfaction",
+    "stat_response_label": "Response",
+    "card_conversion_label": "Conversion Rate",
+    "card_revenue_label": "Revenue Growth",
+    "card_leads_label": "New Leads/Month",
+    "image_alt": "Youssef Erradi — Web Developer & Consultant"
+  },
+
+  "problem": {
+    "badge": "The Hard Truth",
+    "title_line1": "Every day, your website is",
+    "title_em": "losing you money.",
+    "subtitle": "You're investing in ads, creating content, driving traffic — but none of it matters if your website can't convert. Most don't.",
+    "story_label": "This is happening right now",
+    "story_steps": [
+      "A potential client searches for exactly what you offer.",
+      "They click. Your website takes too long to load.",
+      "They can't understand what you do within 3 seconds.",
+      "There's no clear next step. No CTA. No direction.",
+      "They close the tab. Gone forever.",
+      "Your competitor gets the deal."
+    ],
+    "cards": [
+      {
+        "title": "Visitors Don't Understand What You Do",
+        "desc": "Unclear headline, no value proposition, cluttered layout. They leave in under 5 seconds without reading a single word.",
+        "stat_num": "88%",
+        "stat_text": "of visitors never come back after a bad first impression"
+      },
+      {
+        "title": "No Clear Path to Contact You",
+        "desc": "No strategic CTAs, no funnel, no urgency. Users scroll your entire page and leave without knowing what to do next.",
+        "stat_num": "70%",
+        "stat_text": "of small business websites have zero conversion strategy"
+      },
+      {
+        "title": "You're Not Capturing Any Leads",
+        "desc": "No forms, no automation, no follow-up system. Every visitor who doesn't convert on the spot is lost permanently.",
+        "stat_num": "96%",
+        "stat_text": "of visitors aren't ready to buy on their first visit"
+      }
+    ],
+    "contrast_bad_title": "Typical Website",
+    "contrast_bad": [
+      "Looks good but doesn't convert",
+      "No clear CTA or user flow",
+      "No lead capture system",
+      "\"Contact us\" buried in the footer",
+      "Passive — waits and hopes for results"
+    ],
+    "contrast_vs": "vs",
+    "contrast_good_title": "High-Converting System",
+    "contrast_good": [
+      "Clear messaging that hooks in 3 seconds",
+      "Every page optimized for conversion",
+      "Automated lead capture + follow-up",
+      "Strategic CTAs that drive action",
+      "Built to generate revenue on autopilot"
+    ],
+    "transition": "It doesn't have to be this way.",
+    "solution_badge": "The Solution",
+    "solution_title_line1": "I turn your website into a",
+    "solution_title_em": "client acquisition machine.",
+    "solution_desc_html": "Every project I build follows one framework: <strong>Capture attention</strong>, <strong>build instant trust</strong>, and <strong>drive visitors to take action</strong>. No guesswork. Just proven structure that converts.",
+    "flow_visit": "Visit",
+    "flow_trust": "Trust",
+    "flow_convert": "Convert"
+  },
+
+  "services": {
+    "badge": "Services",
+    "title_line1": "Three pillars of",
+    "title_em": "digital growth.",
+    "subtitle": "Attract clients with high-converting websites. Convert leads with automation. Scale operations with custom systems.",
+    "cards": [
+      {
+        "tag": "Recommended",
+        "role": "Attract clients",
+        "result": "Get more clients",
+        "tm": "Client Acquisition System™",
+        "desc": "A website engineered to turn every visitor into a lead — built around strategy, not just design.",
+        "features": [
+          "Messaging that hooks visitors in under 3 seconds",
+          "A clear path from landing to contacting you",
+          "Pages that load fast and rank on Google",
+          "Mobile experience that matches how people browse"
+        ],
+        "outcome": "Your website becomes a 24/7 client-generating machine.",
+        "cta": "Get More Clients"
+      },
+      {
+        "role": "Convert & follow up",
+        "result": "Automate your leads",
+        "tm": "Lead Automation Engine™",
+        "desc": "Capture every lead, respond instantly, and follow up automatically — without lifting a finger.",
+        "features": [
+          "Never lose a lead to slow response time again",
+          "Instant WhatsApp & email follow-ups on autopilot",
+          "Leads routed directly into your CRM",
+          "Save 10+ hours per week on manual tasks"
+        ],
+        "outcome": "Close more deals with zero manual work.",
+        "cta": "Automate My Leads"
+      },
+      {
+        "tag": "For Companies & Operations",
+        "role": "Scale operations",
+        "result": "Run your business on real software",
+        "tm": "Business Systems & Dashboards™",
+        "desc": "Custom-built internal systems for companies to manage data, operations, and workflows — replacing spreadsheets with enterprise-grade tools.",
+        "features": [
+          "SQL dashboards & real-time reporting",
+          "Production tracking & operations systems",
+          "Internal business applications",
+          "Custom integrations across your entire stack"
+        ],
+        "outcome": "Your operations run on custom software — not spreadsheets.",
+        "cta": "Build My System"
+      }
+    ],
+    "micro_cta": "Want me to review your current system?"
+  },
+
+  "value": {
+    "badge": "Why Me",
+    "title_line1": "I don't build websites. I build",
+    "title_em": "business infrastructure.",
+    "subtitle": "Most developers give you a design. I give you a system engineered to generate revenue and streamline operations.",
+    "positioning": "Built for companies, not just websites.",
+    "items": [
+      {
+        "title": "I Think Like a Business Owner",
+        "desc": "I don't just code — I understand your revenue model and build around it"
+      },
+      {
+        "title": "Every Pixel Has a Job",
+        "desc": "Nothing decorative. Every element exists to move visitors closer to becoming clients"
+      },
+      {
+        "title": "Clarity Over Complexity",
+        "desc": "Clean structure, fast performance, zero confusion — visitors know exactly what to do"
+      },
+      {
+        "title": "Built to Scale With You",
+        "desc": "Your website today handles 10 clients. I build it to handle 1,000 without breaking"
+      }
+    ]
+  },
+
+  "process": {
+    "badge": "Process",
+    "title_line1": "From first call to live in",
+    "title_em": "under 3 weeks.",
+    "subtitle": "A proven 4-step process. No bloat. No delays. Just focused execution.",
+    "deliverable_label": "Deliverable:",
+    "steps": [
+      {
+        "title": "Deep Dive",
+        "desc": "I learn your business, your clients, and what makes them buy",
+        "deliverable": "Clear action plan"
+      },
+      {
+        "title": "Strategy & Structure",
+        "desc": "I map the conversion flow, messaging, and page architecture",
+        "deliverable": "System blueprint"
+      },
+      {
+        "title": "Build & Refine",
+        "desc": "I design, develop, and optimize until every element converts",
+        "deliverable": "Complete system"
+      },
+      {
+        "title": "Launch & Support",
+        "desc": "Go live with confidence — I monitor, tweak, and support post-launch",
+        "deliverable": "Live & optimized"
+      }
+    ]
+  },
+
+  "pricing": {
+    "badge": "Pricing & Plans",
+    "title_line1": "Choose the plan that fits your",
+    "title_em": "ambition.",
+    "subtitle": "No hidden fees. No surprises. Pick a plan, and let's start building your growth engine.",
+    "plans": [
+      {
+        "tier": "Starter",
+        "result": "Launch a professional website that builds trust and credibility.",
+        "currency": "$",
+        "price": "1,500",
+        "plus": "",
+        "who": "Best for small businesses launching their first professional web presence.",
+        "features": [
+          "Conversion-focused design",
+          "Mobile optimization",
+          "Fast performance (under 2s load)",
+          "Clear messaging & CTA placement"
+        ],
+        "roi": "One new client covers the entire investment.",
+        "cta": "Get Started"
+      },
+      {
+        "tier": "Growth",
+        "badge": "Most Clients Start Here",
+        "result": "Generate consistent leads and convert visitors into clients.",
+        "currency": "$",
+        "price": "3,000",
+        "plus": "",
+        "who": "Best for businesses that want to generate consistent leads from their website.",
+        "features": [
+          "Everything in Starter",
+          "Lead capture system & CTA funnel",
+          "Conversion optimization",
+          "Basic automation & follow-up",
+          "Strategy session included"
+        ],
+        "roi": "One client can pay for this entire system.",
+        "cta": "Get More Clients"
+      },
+      {
+        "tier": "Scale",
+        "badge": "For Companies",
+        "result": "Build a complete digital system that grows your business automatically.",
+        "currency": "$",
+        "price": "6,000",
+        "plus": "+",
+        "who": "Best for companies that need a full system — website, automation, and custom tools.",
+        "features": [
+          "Full system (website + automation)",
+          "Advanced workflows & sequences",
+          "Custom integrations (CRM, APIs)",
+          "Performance optimization & analytics",
+          "Priority support & ongoing optimization"
+        ],
+        "roi": "Built for real business results — systems that pay for themselves.",
+        "cta": "Build My System"
+      }
+    ],
+    "consulting": {
+      "badge": "Expert Guidance",
+      "title": "Consulting & Technical Advisory",
+      "audience": "For developers & companies",
+      "desc": "Solve real production problems, improve system performance, and build scalable architecture with expert guidance.",
+      "list": [
+        "Production debugging & troubleshooting",
+        "Performance optimization & load testing",
+        "Scalable architecture design",
+        "Code review & system audits"
+      ],
+      "hourly_title": "Hourly Session",
+      "hourly_price": "$75",
+      "hourly_suffix": "/hr",
+      "hourly_desc": "Targeted deep dive into a specific production problem.",
+      "package_title": "4-Session Package",
+      "package_price": "$250",
+      "package_save": "Save 17%",
+      "package_desc": "Structured advisory across multiple sessions for complex systems.",
+      "cta": "Book a Session"
+    },
+    "maintenance": {
+      "title": "Maintenance & Support",
+      "desc": "Keep your website running smoothly, secure, and continuously improving.",
+      "basic_title": "Basic",
+      "basic_price": "$50",
+      "basic_suffix": "/mo",
+      "basic_items": ["Bug fixes", "Small updates"],
+      "pro_title": "Pro",
+      "pro_price": "$150",
+      "pro_suffix": "/mo",
+      "pro_items": ["Priority support", "Monthly improvements", "Performance monitoring"],
+      "cta": "Keep My Website Running"
+    },
+    "addons": {
+      "title": "Power Add-ons",
+      "items": [
+        { "name": "SEO Optimization", "desc": "Rank higher, get free traffic", "price": "$500" },
+        { "name": "Speed Optimization", "desc": "Sub-2s load times guaranteed", "price": "$300" },
+        { "name": "API Integration", "desc": "Connect any tool or service", "price": "$800" },
+        { "name": "AI-Powered Features", "desc": "Chatbots, generators, smart tools", "price": "$1,000+" },
+        { "name": "Multi-language", "desc": "Expand your audience reach", "price": "$400" }
+      ]
+    }
+  },
+
+  "apps": {
+    "badge": "Mobile Apps Studio",
+    "title_line1": "Websites, automation, and",
+    "title_em": "mobile apps on Google Play.",
+    "subtitle": "Youssef Erradi Labs builds polished Android experiences that extend your business beyond the browser — fast, branded, and ready for real users.",
+    "play_aria": "View Youssef Erradi Labs on Google Play",
+    "play_overline": "Available on",
+    "play_label": "Google Play",
+    "cta_primary": "Build My App",
+    "trust": ["Android-ready delivery", "Brand-consistent UX", "Store presence support"],
+    "stats": [
+      { "number": "3+", "label": "App categories" },
+      { "number": "24/7", "label": "Mobile visibility" },
+      { "number": "Play", "label": "Distribution channel" }
+    ],
+    "mockup": {
+      "main_label": "Launch Suite",
+      "main_title": "Mobile product system",
+      "secondary_label": "Google Play",
+      "secondary_title": "Trusted app presence"
+    },
+    "cards": [
+      {
+        "kicker": "Client apps",
+        "title": "Service booking & lead capture",
+        "desc": "Mobile funnels that help clients request quotes, book calls, and stay connected from their phone."
+      },
+      {
+        "kicker": "Business tools",
+        "title": "Dashboards in your pocket",
+        "desc": "Operational views, reports, and internal workflows designed for teams that move fast."
+      },
+      {
+        "kicker": "Store-ready",
+        "title": "Launch polish for Google Play",
+        "desc": "Clean branding, responsive interfaces, and store-facing assets aligned with your company identity."
+      }
+    ]
+  },
+
+  "work": {
+    "badge": "Results",
+    "title_line1": "Selected",
+    "title_em": "Work.",
+    "subtitle": "Real projects. Real results. Here's what I've built for businesses like yours.",
+    "cases": [
+      {
+        "industry": "Food Industry",
+        "title": "Cuisine Solution System",
+        "type": "Internal Production Systems & Dashboards",
+        "desc": "Built custom production tracking systems and SQL dashboards to manage daily operations — replacing spreadsheets with real-time visibility across the production floor.",
+        "result": "Reduced manual reporting by 80% · Real-time production visibility",
+        "tags": ["SQL Dashboard", "Production Tracking", "Internal Tools"]
+      },
+      {
+        "industry": "Tech / IT Services",
+        "title": "EGTV Informatique",
+        "type": "Scalable Applications & Reporting Tools",
+        "desc": "Developed scalable web applications and reporting tools — enabling the company to track performance, manage clients, and automate internal workflows.",
+        "result": "Automated client management · 3x faster reporting",
+        "tags": ["Full-Stack App", "Reporting", "Automation"]
+      },
+      {
+        "industry": "SaaS / Digital Tools",
+        "title": "SmartlyTools",
+        "type": "Online Tools Platform",
+        "desc": "Built a full SaaS-style tools platform from scratch — fast, scalable, and designed for high-volume usage with a clean user experience.",
+        "result": "Scalable architecture · Handles high-volume traffic",
+        "tags": ["Platform", "SaaS", "Full-Stack"]
+      }
+    ],
+    "trust_line": "Used by businesses to improve operations and scale efficiently."
+  },
+
+  "about": {
+    "badge": "About Me",
+    "title": "Hi, I'm Youssef.",
+    "lead": "I'm not a designer who codes. I'm a full-stack developer who builds systems that drive business outcomes.",
+    "p1_html": "After building 50+ projects across food production, IT services, SaaS, and professional services, I've learned one thing: <strong>a great-looking website means nothing if it doesn't generate revenue or solve a real operational problem.</strong>",
+    "p2": "That's why every project starts with your business goals — not a color palette. I build digital infrastructure that attracts clients, automates workflows, and scales with you.",
+    "industries_label": "Industries served:",
+    "industries_tags": ["Food & Production", "IT & Tech", "Professional Services", "SaaS"],
+    "stats": [
+      { "number": "50+", "label": "Projects" },
+      { "number": "3+", "label": "Years" },
+      { "number": "100%", "label": "Dedication" }
+    ],
+    "trust_title": "Why clients keep coming back",
+    "trust_desc": "I work with serious business owners who want results — not just deliverables.",
+    "trust_items": [
+      { "title": "Senior-level execution", "desc": "Clean code, modern stack, built to last" },
+      { "title": "Revenue-first mindset", "desc": "Every decision tied to your bottom line" },
+      { "title": "No BS communication", "desc": "Fast responses, honest timelines, zero fluff" },
+      { "title": "Long-term partnership", "desc": "I don't disappear after launch — I help you grow" }
+    ]
+  },
+
+  "cta": {
+    "badge": "Limited Availability",
+    "title_line1": "Stop losing clients to a",
+    "title_line2": "website that doesn't",
+    "title_em": "convert.",
+    "urgency": "Every day you wait, you lose potential clients to competitors with better systems.",
+    "value": "I'll review your current website, identify what's costing you clients, and give you a clear action plan.",
+    "pills": ["No pressure", "No commitment", "Just clarity"],
+    "main_button": "Book a Free Strategy Call",
+    "main_value": "Get a clear plan for your business — no commitment required",
+    "channels_label": "Prefer messaging? Reach out the way that works best for you.",
+    "channels": {
+      "whatsapp": "WhatsApp",
+      "linkedin": "LinkedIn",
+      "email": "Email",
+      "instagram": "Instagram"
+    },
+    "note": "I respond within 24 hours · Limited availability · Only a few spots each month"
+  },
+
+  "footer": {
+    "tagline": "Systems that generate clients automatically.",
+    "nav_title": "Navigation",
+    "links": {
+      "home": "Home",
+      "services": "Services",
+      "work": "Work",
+      "pricing": "Pricing",
+      "contact": "Contact"
+    },
+    "connect_title": "Connect",
+    "connect": {
+      "linkedin": "LinkedIn",
+      "email": "Email",
+      "whatsapp": "WhatsApp"
+    },
+    "copyright": "© 2026 Youssef Erradi Labs. All rights reserved."
+  },
+
+  "lang_switcher": {
+    "label": "Language",
+    "en": "English",
+    "fr": "Français",
+    "ar": "العربية"
+  }
+}
